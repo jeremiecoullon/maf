@@ -45,7 +45,7 @@ def result(model_name, mode, n_hiddens, act_fun, n_comps=None, batch_norm=False)
 
 def collect_results(data, n_hiddens, n_layers, n_comps, n_layers_comps, act_funs, modes, has_cond):
 
-    print 'collecting for {0}...'.format(data)
+    print('collecting for {0}...'.format(data))
     ex.load_data(data)
 
     # create file to write to
@@ -169,7 +169,7 @@ def main():
             collect_results(data, [1024, 2048], [5, 10], [10], [(5, 10)], ['relu'], ['random'], True)
 
         else:
-            print '{0} is not a valid dataset'.format(data)
+            print('{0} is not a valid dataset'.format(data))
             continue
 
 

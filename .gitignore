@@ -11,6 +11,10 @@
 *.pkl
 *.csv
 *.mat
+# folders for experiments
+data/
+results/
+ouptut/
 
 # text editor's temporary files
 *~

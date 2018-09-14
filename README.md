@@ -7,6 +7,8 @@ Code for reproducing the experiments in the paper:
 
 ## How to run the code
 
+Requirements: numpy, pandas, theano, matplotlib, h5py
+
 To run all experiments for a particular dataset, run:
 
 ```
@@ -48,22 +50,21 @@ All datasets used in the experiments are preprocessed versions of public dataset
 
 * POWER:  
   http://archive.ics.uci.edu/ml/datasets/Individual+household+electric+power+consumption
-  
+
 * GAS  
   http://archive.ics.uci.edu/ml/datasets/Gas+sensor+array+under+dynamic+gas+mixtures
-  
+
 * HEPMASS  
   http://archive.ics.uci.edu/ml/datasets/HEPMASS
-  
+
 * MINIBOONE  
   http://archive.ics.uci.edu/ml/datasets/MiniBooNE+particle+identification
-  
+
 * BSDS300  
   https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/
-  
+
 * MNIST  
   http://yann.lecun.com/exdb/mnist/
-  
+
 * CIFAR-10  
   https://www.cs.toronto.edu/~kriz/cifar.html
-

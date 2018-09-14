@@ -1,6 +1,9 @@
-from itertools import izip
+try:
+    from itertools import izip as zip
+except ImportError:
+    pass
 import numpy as np
-import cPickle as pickle
+import pickle as pickle
 import matplotlib.pyplot as plt
 
 import datasets
@@ -70,7 +73,7 @@ class CIFAR10:
         # load train batches
         x = []
         l = []
-        for i in xrange(1, 6):
+        for i in range(1, 6):
             f = open(path + 'data_batch_' + str(i), 'rb')
             dict = pickle.load(f)
             x.append(dict['data'])
@@ -120,7 +123,7 @@ class CIFAR10:
 
         n_bins = int(np.sqrt(data.N))
         fig, axs = plt.subplots(3, 1)
-        for ax, d, t in izip(axs, [data_r, data_g, data_b], ['red', 'green', 'blue']):
+        for ax, d, t in zip(axs, [data_r, data_g, data_b], ['red', 'green', 'blue']):
             ax.hist(d, n_bins, normed=True)
             ax.set_title(t)
         plt.show()
